@@ -41,7 +41,7 @@ function App() {
           <button type="submit">Submit</button>
         </div>
       </form>
-      {submit && <p>{`Full Name : ${fullName.firstName} ${fullName.lastName}`}</p>}
+      {submit && <p>{`Full Name: ${fullName.firstName} ${fullName.lastName}`}</p>}
     </div>
   );
 }
