@@ -9,10 +9,11 @@ function App() {
   const [submit, setSubmit] = useState(false)
   const handleChange = (e)=> {
     const {name,value} = e.target;
-    setFullName((prevFullName)=>({
+    if(/^[a-zA-Z]*$!@/.test(value || value === ""))
+   { setFullName((prevFullName)=>({
       ...prevFullName,
       [name]: value,
-    }))
+    }))}
     
   }
   const handleSubmit = (e)=>{
